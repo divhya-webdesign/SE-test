@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Learn CSS</title>
+    <script>
+       function clickme()
+      {
+         alert("hello");
+         var v=document.getElementById("user1").value;
+         var pass=document.getElementById("pass1").value;
+         var id1= document.getElementById("r1");
+         var id2= document.getElementById("r2");
+          if(id1.checked==true)
+         { 
+           alert("the button selected is"+id1.value);
+         }
+         else if(id2.checked==true)
+        {
+          alert("the button selected is"+id2.value);
+        }
+         else
+        { alert("no selection");
+        }
+
+         alert(v);
+         alert(pass);
+      }
+</script>
+
+  </head>
+  <body>
+<input type="text" id="user1" placeholder="type some shit">
+<input type="password" id="pass1" placeholder="type password">
+<input type="radio" value="male" name="grp1" id="r1">male</input>
+<input type="radio" value="female" name="grp1" id="r2">female</input>
+
+<button onclick="clickme()">clickme</button>
+<!--<h1 id="h1">jello</h1>-->
+</body>
+</html>
